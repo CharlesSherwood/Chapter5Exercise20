@@ -94,7 +94,7 @@ void PlayGame()
     int tries = 0;
     int Rand = Random();
 
-    cout << "Please Enter Your Name: ";
+    cout << "\nPlease Enter Your Name: ";
     cin.ignore(); // clear leftover newline
     getline(cin, Name);
 
@@ -139,7 +139,7 @@ void SaveScore(const string& name, int tries)
     }
     else
     {
-        cerr << "Error: Unable to open scores.txt for writing.\n";
+        cerr << "\nError: Unable to open scores.txt for writing.\n";
     }
 }
 
@@ -153,7 +153,7 @@ void ReadScores()
 
     if (!file.is_open())
     {
-        cerr << "Error: Unable to open scores.txt for reading.\n";
+        cerr << "\nError: Unable to open scores.txt for reading.\n";
         return;
     }
 
@@ -175,7 +175,7 @@ void DeleteScores()
 {
     if (remove("scores.txt") == 0)
     {
-        cout << "**All scores have been deleted!**\n";
+        cout << "\n**All scores have been deleted!**\n";
     }
     else
     {
