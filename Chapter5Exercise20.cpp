@@ -45,7 +45,7 @@ int main()
 		SaveScore(Name, tries);
 		Menu();
 }
-
+ 
 void Menu()
 {
 	int Choice;
