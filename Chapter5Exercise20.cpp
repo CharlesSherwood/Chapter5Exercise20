@@ -53,7 +53,7 @@ void Menu()
     {
         cout << "\n=========== MENU ===========\n";
         cout << "1 - Display Scores\n";
-        cout << "2 - Play A New Session\n";
+        cout << "2 - Play A Session\n";
         cout << "3 - Delete Old Sessions\n";
         cout << "4 - Exit The Program\n";
         cout << "Enter your choice: ";
