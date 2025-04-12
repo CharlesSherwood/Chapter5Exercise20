@@ -3,7 +3,9 @@ Programmer Name:Charles Sherwood
 Date:4/2025
 Requirements:This program should generate a random 
 number and have the user guess it correctly and save
-the results of the guess
+the results of the guess. It should now display the result
+right after the game finishs
+even without user prompt.
 */
 
 
@@ -115,7 +117,9 @@ void PlayGame()
         else
         {
             cout << "!!Correct!!\n";
+            cout << "-------\n";
             cout << "Tries: "<<tries<<endl;
+            cout << "-------\n";
         }
     } while (Guess != Rand);
 
