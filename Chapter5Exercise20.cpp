@@ -5,12 +5,16 @@ Requirements:This program should generate a random
 number and have the user guess it correctly and save
 the results of the guess
 */
+
+
 #include <ctime>
 #include <cstdlib>
 #include <string>
 #include <iostream>
 #include <fstream>
 using namespace std;
+
+
 
 // Prototypes
 int Random();
@@ -109,8 +113,10 @@ void PlayGame()
         else if (Guess < Rand)
             cout << "**Guess Too Low**\n";
         else
+        {
             cout << "!!Correct!!\n";
-
+            cout << "Tries: "<<tries<<endl;
+        }
     } while (Guess != Rand);
 
     SaveScore(Name, tries);
